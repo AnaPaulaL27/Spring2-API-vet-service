@@ -50,7 +50,7 @@ public class PetController {
 
     public ResponseEntity<Pet> createPet(@RequestBody Pet newPet){
 
-        //now save pet into database, use repository
+        //now save pet into database, use repository:
         petRepository.save(newPet);
 
         //return a response entity: the new pet + HttpStatus.Created.

@@ -28,7 +28,7 @@ import java.util.Optional;
 
        //SHOW
 
-        @GetMapping(value = "/{id}") // looking for a response on is localhost:8080/vets/1  -- e.g. vet with id=1,
+        @GetMapping(value = "/{id}") // we are looking for a response on is localhost:8080/vets/1  -- e.g. vet with id=1,
 
         public ResponseEntity<Optional<Vet>> getVet(@PathVariable Long id){
            return new ResponseEntity<>(vetRepository.findById(id),HttpStatus.OK);
