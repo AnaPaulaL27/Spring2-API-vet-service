@@ -53,7 +53,7 @@ public class PetController {
         //now save pet into database, use repository
         petRepository.save(newPet);
 
-        //return a response entity-, the new pet + HttpStatus.Created.
+        //return a response entity: the new pet + HttpStatus.Created.
         return  new ResponseEntity<>(newPet, HttpStatus.CREATED);
     }
 }
